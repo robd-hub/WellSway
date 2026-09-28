@@ -113,23 +113,23 @@
   /* DANCES */
   .dances{background:var(--champ)}
   .styles{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem}
-  .style{border-radius:28px;padding:2.2rem;position:relative;overflow:hidden}
+  .style{border-radius:28px;padding:1.8rem 2.2rem 1.2rem;position:relative;overflow:hidden}
   .style.latin{background:linear-gradient(150deg,var(--velvet),var(--velvet-3));color:#fff}
   .style.ballroom{background:#fff;border:1px solid #efe3c3}
-  .style h3{font-size:2rem;font-weight:800}
+  .style h3{font-size:1.7rem;font-weight:800}
   .style.latin h3{color:var(--gold-2)}
   .style.ballroom h3{color:var(--velvet)}
-  .style>p{margin:.4rem 0 1.4rem;font-size:.95rem;opacity:.85}
-  .dl{display:grid;gap:.6rem;list-style:none}
-  .dl li{display:grid;grid-template-columns:1fr auto;align-items:center;gap:.2rem 1rem;padding:.85rem 1rem;border-radius:14px}
-  .latin .dl li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1)}
-  .ballroom .dl li{background:#faf6ea;border:1px solid #f0e6cb}
+  .style>p{margin:.2rem 0 .8rem;font-size:.95rem;opacity:.85}
+  .dl{display:grid;list-style:none}
+  .dl li{display:grid;grid-template-columns:1fr auto;align-items:center;gap:.1rem 1rem;padding:.75rem 0;border-top:1px solid}
+  .latin .dl li{border-color:rgba(255,255,255,.14)}
+  .ballroom .dl li{border-color:#efe3c3}
   .dl b{font-family:var(--display);font-size:1.15rem;font-weight:700}
   .dl small{grid-column:1;font-size:.82rem;opacity:.75}
-  .dl .tempo{grid-column:2;grid-row:1/3;text-align:right;font-size:.75rem;white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.35}
+  .dl .tempo{grid-column:2;grid-row:1/3;display:flex;flex-direction:row-reverse;align-items:center;gap:.6rem;font-size:.8rem;white-space:nowrap;font-weight:700;line-height:1.35}
   .latin .tempo{color:var(--gold-2)}
   .ballroom .tempo{color:var(--teal)}
-  .meter{display:flex;gap:3px;justify-content:flex-end;align-items:flex-end;height:20px;margin-bottom:6px}
+  .meter{display:flex;gap:3px;justify-content:flex-end;align-items:flex-end;height:20px}
   .meter i{width:8px;border-radius:3px;background:currentColor;opacity:.22}
   .meter i:nth-child(1){height:6px}.meter i:nth-child(2){height:9.5px}.meter i:nth-child(3){height:13px}.meter i:nth-child(4){height:16.5px}.meter i:nth-child(5){height:20px}
   .meter i.on{opacity:1}
@@ -324,7 +324,8 @@
     .hero-grid{padding-block:40px 70px}
     .stage{width:min(250px,72%)}
     .chip-next{left:-24px;bottom:24px}
-    .style{padding:1.6rem}
+    .style{padding:1.4rem 1.4rem .8rem}
+    .dl .tempo{flex-direction:column;align-items:flex-end;gap:.3rem}
     .tabbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(8,43,39,.97);backdrop-filter:blur(10px);border-top:1px solid rgba(240,207,124,.25);padding-bottom:env(safe-area-inset-bottom,0px)}
     .tabbar a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:.55rem 0 .6rem;color:#cfe5dc;text-decoration:none;font-size:.68rem;font-weight:700}
     .tabbar a svg{width:22px;height:22px}
@@ -476,7 +477,7 @@
   <div class="wrap">
     <div class="head center">
       <h2>Ten dances you'll learn</h2>
-      <p>Five Latin and five Ballroom. Some are slow and dreamy, others fast and full of energy.</p>
+      <p>Five Latin and five Ballroom, from slow and dreamy to fast and fun. I teach every dance step by step, at a gentle pace.</p>
     </div>
     <div class="styles">
       <div class="style latin">
@@ -502,7 +503,6 @@
         </ul>
       </div>
     </div>
-    <p class="note">Energy level from slow and dreamy to fast and fun. Every dance is taught step by step, at a gentle pace.</p>
   </div>
 </section>
 
