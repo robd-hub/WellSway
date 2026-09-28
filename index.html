@@ -168,13 +168,14 @@
   .contact-side .map{flex:1;position:relative;min-height:240px}
   .contact-side .map iframe{position:absolute;inset:0;height:100%}
   .way{display:flex;gap:1rem;align-items:center;background:#fff;border:1px solid #efe3c3;border-radius:20px;padding:1.1rem 1.2rem}
+  a.way{text-decoration:none;transition:border-color .2s,box-shadow .2s}
+  a.way:hover{border-color:var(--gold);box-shadow:0 14px 30px -22px rgba(12,59,53,.55)}
+  a.way:hover .go{background:var(--gold-2)}
   .way .ic{flex:0 0 48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--velvet);color:var(--gold-2)}
   .way .ic svg{width:22px;height:22px}
   .way div{flex:1;min-width:0}
   .way small{display:block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-  .way a,.way span.v{font-family:var(--display);font-weight:700;font-size:1.12rem;color:var(--velvet);text-decoration:none;overflow-wrap:anywhere}
-  .copy{flex:0 0 auto;background:var(--mint);color:var(--velvet);border:0;border-radius:999px;padding:.45rem .8rem;font:700 .78rem var(--body);cursor:pointer}
-  .copy:hover{background:var(--gold-2)}
+  .way .v{font-family:var(--display);font-weight:700;font-size:1.12rem;color:var(--velvet);text-decoration:none;overflow-wrap:anywhere}
   .map{border-radius:20px;overflow:hidden;border:1px solid #efe3c3;min-height:220px;background:#e9efe7}
   .map iframe{display:block;width:100%;height:240px;border:0}
   form{background:#fff;border-radius:28px;padding:2rem;border:1px solid #efe3c3;box-shadow:0 30px 60px -40px rgba(12,59,53,.5)}
@@ -330,7 +331,7 @@
     .tabbar a.call{color:var(--gold-2)}
     footer{padding-bottom:6rem}
   }
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ribbon div{animation:none}.btn{transition:none}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ribbon div{animation:none}.btn,a.way{transition:none}}
 </style>
 </head>
 <body>
@@ -577,12 +578,12 @@
     </div>
     <div class="contact-grid">
       <div class="ways">
-        <div class="way"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Call or text</small><a href="tel:+447753612174">07753 612174</a></div><button class="copy" type="button" data-copy="07753 612174">Copy</button></div>
-        <div class="way"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M22 7l-10 6L2 7"/></svg></span><div><small>Email</small><a href="mailto:justynawells13@gmail.com">justynawells13@gmail.com</a></div><button class="copy" type="button" data-copy="justynawells13@gmail.com">Copy</button></div>
-        <a class="way" href="https://wa.me/447753612174?text=Hi%20Justyna%2C%20I%20found%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20dance%20classes." target="_blank" rel="noopener" style="text-decoration:none"><span class="ic wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></span><div><small>WhatsApp</small><span class="v">Message Justyna</span></div><span class="go">Open</span></a>
-        <a class="way" href="https://www.facebook.com/profile.php?id=100071256626333" target="_blank" rel="noopener" style="text-decoration:none"><span class="ic fb"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg></span><div><small>Facebook page</small><span class="v">Follow WellSway on Facebook</span></div><span class="go">Visit</span></a>
-        <a class="way" href="https://m.me/100071256626333" target="_blank" rel="noopener" style="text-decoration:none"><span class="ic ms"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.4 2 2 6.1 2 11.7c0 2.9 1.2 5.5 3.2 7.2V22l3-1.6c1.2.3 2.5.5 3.8.5 5.6 0 10-4.1 10-9.7S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7z"/></svg></span><div><small>Facebook Messenger</small><span class="v">Message WellSway</span></div><span class="go">Open</span></a>
-        <div class="way"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Find us</small><span class="v">1AE, Community Centre, 10 Fen Rd, Washingborough, Lincoln LN4 1AB</span></div></div>
+        <a class="way" href="tel:+447753612174"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Call or text</small><span class="v">07753 612174</span></div><span class="go">Call</span></a>
+        <a class="way" href="mailto:justynawells13@gmail.com"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M22 7l-10 6L2 7"/></svg></span><div><small>Email</small><span class="v">justynawells13@gmail.com</span></div><span class="go">Email</span></a>
+        <a class="way" href="https://wa.me/447753612174?text=Hi%20Justyna%2C%20I%20found%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20dance%20classes." target="_blank" rel="noopener"><span class="ic wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></span><div><small>WhatsApp</small><span class="v">Message Justyna</span></div><span class="go">Open</span></a>
+        <a class="way" href="https://www.facebook.com/profile.php?id=100071256626333" target="_blank" rel="noopener"><span class="ic fb"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg></span><div><small>Facebook page</small><span class="v">Follow WellSway on Facebook</span></div><span class="go">Visit</span></a>
+        <a class="way" href="https://m.me/100071256626333" target="_blank" rel="noopener"><span class="ic ms"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.4 2 2 6.1 2 11.7c0 2.9 1.2 5.5 3.2 7.2V22l3-1.6c1.2.3 2.5.5 3.8.5 5.6 0 10-4.1 10-9.7S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7z"/></svg></span><div><small>Facebook Messenger</small><span class="v">Message WellSway</span></div><span class="go">Open</span></a>
+        <a class="way" href="https://maps.google.com/?cid=13043871493941128167" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Find us</small><span class="v">1AE, Community Centre, 10 Fen Rd, Washingborough, Lincoln LN4 1AB</span></div><span class="go">Directions</span></a>
       </div>
       <div class="contact-side">
       <form id="enquiry" novalidate>
@@ -658,12 +659,6 @@
   // Pre-select class in the form
   document.querySelectorAll('[data-pick]').forEach(a=>a.addEventListener('click',()=>{
     const s=document.getElementById('f-class');[...s.options].forEach(o=>{if(o.text===a.dataset.pick)s.value=o.value});
-  }));
-
-  // Copy buttons
-  document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
-    const t=b.dataset.copy,done=()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1600)};
-    try{navigator.clipboard.writeText(t).then(done,()=>{b.textContent=t})}catch(e){b.textContent=t}
   }));
 
   // Highlight nav section

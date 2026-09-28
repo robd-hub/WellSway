@@ -47,7 +47,7 @@ HANDOVER.md    history, decisions, open items, launch checklist
 | 9 | About | `#about` | "My dance *journey*" (script), her story in first person, pull quote, timeline |
 | 10 | Reviews | `#reviews` | Two real Google reviews (verbatim), links to Google listing and Facebook |
 | 11 | FAQ | `#faq` | `<details>`; first one open on purpose |
-| 12 | Contact | `#contact` | Cards: call, email, WhatsApp, Facebook page, Messenger, address + map iframe; enquiry form |
+| 12 | Contact | `#contact` | Cards (each whole card is a link, `a.way`): call, email, WhatsApp, Facebook page, Messenger, address; enquiry form with the map iframe under it |
 | 13 | Footer | `footer` | Logo, social icons, contact line, DesignImp credit |
 | – | Mobile tab bar | `.tabbar` | Shown ≤720px: Classes, WhatsApp, Justyna, Book, Call |
 | – | Floating WhatsApp | `.wa-float` | Desktop only |
@@ -56,9 +56,8 @@ HANDOVER.md    history, decisions, open items, launch checklist
 
 1. **Next class**: reads `.tt-row[data-day][data-start][data-end]` (day 0=Sun…6=Sat), works out the next or ongoing class in **Europe/London** time, adds `.next` to that row (gold edge + "Next up" pill) and fills the hero chip (`#next-label`, `#next-class`). If you add, move or rename a class, update these data attributes.
 2. **Form preselect**: elements with `data-pick="…"` set the enquiry form's `<select id="f-class">` to the matching option text.
-3. **Copy buttons**: `.copy[data-copy]` copies the phone and email to the clipboard.
-4. **Nav highlight**: IntersectionObserver marks the current section's nav link `.on`.
-5. **Enquiry form** (`#enquiry`): builds a `mailto:justynawells13@gmail.com` with subject and body pre-filled and opens the visitor's email app. There's no backend. If a form service is added later (e.g. Formspree, Web3Forms, Vercel function + Resend), replace this handler.
+3. **Nav highlight**: IntersectionObserver marks the current section's nav link `.on`.
+4. **Enquiry form** (`#enquiry`): builds a `mailto:justynawells13@gmail.com` with subject and body pre-filled and opens the visitor's email app. There's no backend. If a form service is added later (e.g. Formspree, Web3Forms, Vercel function + Resend), replace this handler.
 
 ## Design system
 
