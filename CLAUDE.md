@@ -15,7 +15,7 @@ A one-page marketing website for **WellSway Dance Studio**, run by dance teacher
 
 - **Plain static site.** One `index.html` with all CSS and JS inline. No framework, no build step, no package.json.
 - Fonts from Google Fonts: Bricolage Grotesque (headings), Plus Jakarta Sans (body), Great Vibes (script accents and logo).
-- Images: `justyna.jpg` (her photo, 640×800), `og-image.png` (1200×630 social share image).
+- Images: `justyna.jpg` (her photo, 640×800), `og-image.jpg` (1200×630 social share image).
 - `vercel.json`: clean URLs and image cache headers.
 
 Keep it this way unless Rob asks otherwise. Don't introduce React, Tailwind, a bundler or npm dependencies for a one-page site.
@@ -25,7 +25,7 @@ Keep it this way unless Rob asks otherwise. Don't introduce React, Tailwind, a b
 ```
 index.html     the whole site (HTML + <style> + <script>)
 justyna.jpg    hero photo of Justyna
-og-image.png   Facebook/WhatsApp link preview image (green & gold)
+og-image.jpg   Facebook/WhatsApp link preview image (green & gold)
 vercel.json    Vercel static config
 CLAUDE.md      this file
 HANDOVER.md    history, decisions, open items, launch checklist
@@ -135,7 +135,7 @@ The timetable, prices, phone and address are repeated. When one changes, search 
 - Contact cards, footer
 - WhatsApp pre-filled messages (`https://wa.me/447753612174?text=…`, URL-encoded)
 - **JSON-LD** in `<head>`: `LocalBusiness` (`openingHoursSpecification`, `hasOfferCatalog` prices, address, geo) and `FAQPage` (must match the visible FAQ text)
-- `<meta name="description">`, Open Graph tags, and `og-image.png` if the timetable on it changes
+- `<meta name="description">`, Open Graph tags, and `og-image.jpg` if the timetable on it changes
 
 ## Links and formats
 

@@ -52,7 +52,7 @@ The preview pages differ slightly from this repo because the preview host can't 
 - [ ] Ask Justyna to **rename her Google Business Profile** from "Ballroom and Latin Dance Academy" to "WellSway Dance Studio" and add the website URL. Consistent name, address and phone helps local SEO.
 
 ### Technical, once the domain exists
-- [ ] Change `og:image` to an **absolute URL** (`https://<domain>/og-image.png`). Facebook and WhatsApp ignore relative paths.
+- [ ] Change `og:image` to an **absolute URL** (`https://<domain>/og-image.jpg`). Facebook and WhatsApp ignore relative paths.
 - [ ] Add `<link rel="canonical" href="https://<domain>/">` and `og:url`.
 - [ ] Add `robots.txt` and `sitemap.xml` (single URL).
 - [ ] Put the website URL in JSON-LD (`"url"`).
@@ -61,8 +61,8 @@ The preview pages differ slightly from this repo because the preview host can't 
 - [ ] Optional: **Vercel Web Analytics** (one script tag) so Justyna can see visitor numbers.
 
 ### Code tidy-up (safe to do any time)
-- [ ] **Remove unused CSS** left from earlier iterations: `.cls`, `.week`, `.tags`, `.dname`, `.perks`/`.perk`, `.medal`/`.medals`/`.disc`, `.badge`/`.badges`, `.steps`, `.reassure`, `.ss-list`, `.feather`/`.f1`/`.f2`, `.chip-stars`, `.btn-ms`, `.ways-list` (the contact section uses `.way` cards). Check each selector isn't used in the HTML before deleting.
-- [ ] Compress `og-image.png` (577 KB): export as JPG ~120 KB, or an optimised PNG, and update the meta tags.
+- [x] **Removed unused CSS** left from earlier iterations (72 rules; checked against the HTML and JS, layout unchanged at 390px and 1280px).
+- [x] Compressed the share image: now `og-image.jpg` (145 KB, was a 577 KB PNG). Meta tags updated.
 - [ ] Convert `justyna.jpg` to WebP with a JPG fallback (`<picture>`) when new photos arrive.
 
 ### Nice to have (discussed, not yet requested)
@@ -74,7 +74,7 @@ The preview pages differ slightly from this repo because the preview host can't 
 
 ## 4. Moving this into GitHub and Vercel
 
-1. **Create the repo**: on GitHub, make a new repo (e.g. `wellsway-site`, private or public). In this folder:
+1. **Create the repo**: *local git is already set up on `main` with the first commits; only the GitHub repo, `git remote add` and `git push` remain.* On GitHub, make a new repo (e.g. `wellsway-site`, private or public). In this folder:
    ```bash
    git init
    git add .
