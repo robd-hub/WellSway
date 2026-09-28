@@ -162,8 +162,11 @@
 
   /* CONTACT */
   .contact{background:var(--champ)}
-  .contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:2rem;align-items:start}
-  .ways{display:grid;gap:1rem}
+  .contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:2rem}
+  .ways{display:grid;gap:1rem;align-content:start}
+  .contact-side{display:flex;flex-direction:column;gap:1.2rem}
+  .contact-side .map{flex:1;position:relative;min-height:240px}
+  .contact-side .map iframe{position:absolute;inset:0;height:100%}
   .way{display:flex;gap:1rem;align-items:center;background:#fff;border:1px solid #efe3c3;border-radius:20px;padding:1.1rem 1.2rem}
   .way .ic{flex:0 0 48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--velvet);color:var(--gold-2)}
   .way .ic svg{width:22px;height:22px}
@@ -307,15 +310,19 @@
   .tabbar{display:none}
   @media (max-width:980px){
     .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
-
-    .stage{margin-top:1rem}
+    .hero-grid{gap:0}
+    .hero-copy{display:contents}
+    .hero-copy>*{order:2}
+    .hero-copy>.eyebrow,.hero-copy>h1{order:0}
+    .stage{order:1;width:min(320px,100%);margin:0 auto 2.2rem}
     .nav ul li:not(:last-child){display:none}
   }
   @media (max-width:720px){
     section{padding-block:68px}
     .styles,.rv-grid,.row2{grid-template-columns:1fr}
     .hero-grid{padding-block:40px 70px}
-    .chip-next{left:-6px;bottom:30px}
+    .stage{width:min(250px,72%)}
+    .chip-next{left:-24px;bottom:24px}
     .style{padding:1.6rem}
     .tabbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(8,43,39,.97);backdrop-filter:blur(10px);border-top:1px solid rgba(240,207,124,.25);padding-bottom:env(safe-area-inset-bottom,0px)}
     .tabbar a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:.55rem 0 .6rem;color:#cfe5dc;text-decoration:none;font-size:.68rem;font-weight:700}
@@ -347,7 +354,7 @@
 <main>
 <section class="hero" style="padding-block:0">
   <div class="wrap hero-grid">
-    <div>
+    <div class="hero-copy">
       <span class="eyebrow">Ballroom · Latin · Salsa Fit · Washingborough</span>
       <h1>Come and dance with <span class="script">Justyna</span></h1>
       <p class="lead">I'm Justyna, and I've been dancing since I was five. I teach friendly Ballroom, Latin and Salsa Fit classes at the Community Centre in Washingborough, just outside Lincoln. Never danced before? Perfect. You don't need a partner either.</p>
@@ -576,8 +583,8 @@
         <a class="way" href="https://www.facebook.com/profile.php?id=100071256626333" target="_blank" rel="noopener" style="text-decoration:none"><span class="ic fb"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg></span><div><small>Facebook page</small><span class="v">Follow WellSway on Facebook</span></div><span class="go">Visit</span></a>
         <a class="way" href="https://m.me/100071256626333" target="_blank" rel="noopener" style="text-decoration:none"><span class="ic ms"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.4 2 2 6.1 2 11.7c0 2.9 1.2 5.5 3.2 7.2V22l3-1.6c1.2.3 2.5.5 3.8.5 5.6 0 10-4.1 10-9.7S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7z"/></svg></span><div><small>Facebook Messenger</small><span class="v">Message WellSway</span></div><span class="go">Open</span></a>
         <div class="way"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Find us</small><span class="v">1AE, Community Centre, 10 Fen Rd, Washingborough, Lincoln LN4 1AB</span></div></div>
-        <!--MAP--><div class="map"><iframe title="Map showing the Community Centre, 10 Fen Rd, Washingborough" loading="lazy" src="https://maps.google.com/maps?q=53.2243215,-0.4644892&amp;z=15&amp;output=embed"></iframe></div><!--/MAP-->
       </div>
+      <div class="contact-side">
       <form id="enquiry" novalidate>
         <h3>Ask about a class</h3>
         <p>Fill this in and it opens an email to me, ready to send.</p>
@@ -593,6 +600,8 @@
         <button class="btn btn-gold" type="submit" style="width:100%">Send to Justyna</button>
         <div class="sent" id="sent" hidden></div>
       </form>
+        <!--MAP--><div class="map"><iframe title="Map showing the Community Centre, 10 Fen Rd, Washingborough" loading="lazy" src="https://maps.google.com/maps?q=53.2243215,-0.4644892&amp;z=15&amp;output=embed"></iframe></div><!--/MAP-->
+      </div>
     </div>
   </div>
 </section>
