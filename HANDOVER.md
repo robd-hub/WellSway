@@ -74,7 +74,9 @@ The preview pages differ slightly from this repo because the preview host can't 
 
 ## 4. Moving this into GitHub and Vercel
 
-1. **Create the repo**: *local git is already set up on `main` with the first commits; only the GitHub repo, `git remote add` and `git push` remain.* On GitHub, make a new repo (e.g. `wellsway-site`, private or public). In this folder:
+**Done (28 Sep 2026):** code is at https://github.com/robd-hub/WellSway and deploys to Vercel project `well-sway` (team designimp) at https://well-sway.vercel.app. Steps 1 and 2 below are kept for reference.
+
+1. **Create the repo**: On GitHub, make a new repo (e.g. `wellsway-site`, private or public). In this folder:
    ```bash
    git init
    git add .
