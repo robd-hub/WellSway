@@ -27,6 +27,7 @@ index.html     the whole site (HTML + <style> + <script>)
 justyna.jpg    hero photo of Justyna
 og-image.jpg   Facebook/WhatsApp link preview image (green & gold)
 vercel.json    Vercel static config
+.vercelignore  keeps CLAUDE.md and HANDOVER.md off the live site
 CLAUDE.md      this file
 HANDOVER.md    history, decisions, open items, launch checklist
 ```
