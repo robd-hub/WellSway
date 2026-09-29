@@ -37,7 +37,7 @@ HANDOVER.md    history, decisions, open items, launch checklist
 
 | Order | Section | id / class | Notes |
 |---|---|---|---|
-| 1 | Sticky header + nav | `header.top`, `#menu` | Links: Classes, Salsa Fit, Kids, Dances, About Justyna, Reviews, Contact, "Book a class" |
+| 1 | Sticky header + nav | `header.top`, `#menu` | Links: Classes, Salsa Fit, Juniors, Dances, About Justyna, Reviews, Contact, "Book a class" |
 | 2 | Hero | `.hero` | Headline "Come and dance with *Justyna*" (script), first-person intro, CTAs (classes, WhatsApp, phone), photo in gold arch, "Next class" chip |
 | 3 | Dance-name ribbon | `.ribbon` | Scrolling gold marquee (content duplicated for seamless loop) |
 | 4 | Timetable | `#classes`, `.tt`, `.tt-row` | One row per class: day, time, description, price, WhatsApp "Book" button |
@@ -76,7 +76,7 @@ Colours are CSS custom properties on `:root`. Use the tokens, not new hex values
 | `--line` | `#e3e8df` | Borders |
 | `--mint` | `#d8efe6` | Soft chips |
 | WhatsApp green | `#1fa855` | Only for WhatsApp buttons (`.btn-wa`) |
-| Kids accent | `#8a3a70` on `#f8ebf2` | Kids/parents section only |
+| Juniors accent | `#8a3a70` on `#f8ebf2` | Juniors/parents section only |
 
 Buttons: `.btn` + `.btn-gold` (primary), `.btn-velvet` (dark), `.btn-wa` (WhatsApp), `.btn-ghost` (on dark backgrounds).
 
@@ -95,6 +95,7 @@ Breakpoints: `980px` (stack two-column layouts), `720px` (phone: tab bar, single
 ## Copy and voice
 
 - **British English** (colour, centre, practise as a verb, £).
+- Call the Saturday children's class **"Junior Ballroom & Latin"** / **"juniors"**, not "kids". (`#kids` and `.t-kids` stay as internal IDs.)
 - Main sections speak **in Justyna's first person** ("I teach…", "Message me…"). Buttons and labels can address the visitor ("Send to Justyna").
 - Short, warm, plain sentences. Avoid marketing clichés and em-dash asides.
 - Her story in `#about` is **her own words**, lightly edited. Don't rewrite it; only fix typos.
@@ -121,7 +122,7 @@ Breakpoints: `980px` (stack two-column layouts), `720px` (phone: tab bar, single
 | Monday | 19:15–20:15 | Salsa Fit for Ladies | £10 |
 | Tuesday | 19:00–20:00 | Beginners (Ballroom & Latin) | £10 |
 | Thursday | 19:00–20:00 | Intermediate / Improvers | £10 |
-| Saturday | 09:00–10:00 | Kids / Juniors Ballroom & Latin, ages 5+ | £7 per child |
+| Saturday | 09:00–10:00 | Junior Ballroom & Latin, ages 5+ | £7 per child |
 
 **Private classes**: available; times and prices on request (shown in `#classes` under the timetable, the FAQ, the form and JSON-LD). Justyna needs at least 5 children for the kids' class to keep running; this is not shown on the site.
 
