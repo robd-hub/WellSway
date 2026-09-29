@@ -110,7 +110,7 @@ Breakpoints: `980px` (stack two-column layouts), `720px` (phone: tab bar, single
 | Teacher | Justyna Wells, IDTA-qualified, DBS checked, first-aid trained, insured |
 | Phone / WhatsApp | 07753 612174 (`+447753612174`) |
 | Email | justynawells13@gmail.com |
-| Venue | 1AE, Community Centre, 10 Fen Rd, Washingborough, Lincoln LN4 1AB |
+| Venue | Washingborough Community Centre, 10 Fen Road, Lincoln LN4 1AB |
 | Map pin | 53.2243215, -0.4644892 |
 | Google listing | "Ballroom and Latin Dance Academy", 5.0 from 3 reviews: https://maps.google.com/?cid=13043871493941128167 |
 | Facebook | https://www.facebook.com/profile.php?id=100071256626333 (Messenger: https://m.me/100071256626333) |
