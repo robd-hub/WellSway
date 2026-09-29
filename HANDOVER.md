@@ -47,7 +47,7 @@ The preview pages differ slightly from this repo because the preview host can't 
 - [x] **Class photos added** (29 Sep 2026): three couples under the timetable and a group shot in "Coming to your first class". Still wanted: Salsa Fit and kids photos (with permission), a junior competition photo, and a better hero photo of Justyna. **Check Justyna has confirmed the students in the photos are happy to be on the site.**
 - [ ] **Domain**: e.g. `wellswaydance.co.uk` (Rob sorting).
 - [x] **Kids' class price**: £7 per child (Justyna, 28 Sep 2026). She needs at least 5 children to keep it running; not shown on the site.
-- [ ] **Kids' class end time** (currently "9:00am" only). Update the row's `data-end` too.
+- [x] **Kids' class end time**: 9–10am (confirmed 29 Sep 2026). Timetable row, `data-end`, kids text, FAQ and JSON-LD updated.
 - [ ] **Private classes**: added as "available, message for times and prices". Get prices and details from Justyna if she wants them shown.
 - [ ] **Confirm the Facebook URL**: currently `profile.php?id=100071256626333`. If she has a vanity URL (facebook.com/…), swap it everywhere, including the `m.me/` Messenger links and JSON-LD `sameAs`.
 - [ ] **Energy meter ratings** (1–5 per dance) are Claude's judgement. Ask Justyna to check.
@@ -100,7 +100,7 @@ The preview pages differ slightly from this repo because the preview host can't 
 ## 5. Things to watch out for
 
 - **Facts are repeated** in visible text, WhatsApp messages and JSON-LD. See "When you change facts" in `CLAUDE.md`.
-- **The next-class logic** uses UK time and the `data-*` attributes on `.tt-row`. The Saturday class has no end time, so the code assumes 60 minutes.
+- **The next-class logic** uses UK time and the `data-*` attributes on `.tt-row`. The Saturday class now has an end time (10:00); if a row ever has no `data-end`, the code assumes 60 minutes.
 - **The enquiry form** only works if the visitor has an email app set up (mailto). WhatsApp is the main route by design.
 - **The Google Maps iframe** uses the lat/long pin (`53.2243215,-0.4644892`); the "Get directions" links use the Google listing's CID URL.
 - **Reviews are real** (Irene Nicholson, Chris Hood; a third, from Aimee Gray, is stars only). Don't edit them. Add new ones only by copying real Google reviews word for word.

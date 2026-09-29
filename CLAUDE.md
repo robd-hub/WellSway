@@ -121,7 +121,7 @@ Breakpoints: `980px` (stack two-column layouts), `720px` (phone: tab bar, single
 | Monday | 19:15–20:15 | Salsa Fit for Ladies | £10 |
 | Tuesday | 19:00–20:00 | Beginners (Ballroom & Latin) | £10 |
 | Thursday | 19:00–20:00 | Intermediate / Improvers | £10 |
-| Saturday | 9:00am (end time TBC) | Kids Ballroom & Latin, ages 5+ | £7 per child |
+| Saturday | 09:00–10:00 | Kids / Juniors Ballroom & Latin, ages 5+ | £7 per child |
 
 **Private classes**: available; times and prices on request (shown in `#classes` under the timetable, the FAQ, the form and JSON-LD). Justyna needs at least 5 children for the kids' class to keep running; this is not shown on the site.
 
