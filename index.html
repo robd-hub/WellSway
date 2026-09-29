@@ -107,6 +107,9 @@
   .venue{margin-top:1.8rem;display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;color:var(--muted);font-size:.95rem}
   .venue svg{width:20px;height:20px;color:var(--teal)}
   .venue a{color:var(--velvet);font-weight:700}
+  .photo-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.4rem}
+  .photo-strip img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:18px}
+  .fc-photo{display:block;width:100%;height:auto;margin-top:2.2rem;border-radius:20px}
 
   /* PERKS */
 
@@ -297,6 +300,8 @@
   @media (max-width:720px){
     .tt-row{grid-template-columns:auto 1fr;gap:.4rem 1rem;padding:1.2rem .2rem}
     .tt-row.next{padding-inline:1rem .6rem}
+    .photo-strip{gap:.5rem;margin-top:1.8rem}
+    .photo-strip img{border-radius:12px}
     .r-day{grid-column:1/-1;display:flex;align-items:baseline;gap:.6rem}
     .r-day b{font-size:1.4rem}
     .r-main{grid-column:1/-1}
@@ -415,6 +420,11 @@
       </article>
     </div>
     <div class="venue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1AE, Community Centre, 10 Fen Rd, Washingborough, Lincoln LN4 1AB</span><a href="https://maps.google.com/?cid=13043871493941128167" target="_blank" rel="noopener">Get directions ↗</a></div>
+    <div class="photo-strip">
+      <img src="photos/couple-1.webp" alt="A couple from Justyna's class dancing in the hall" width="800" height="1000" loading="lazy">
+      <img src="photos/couple-2.webp" alt="Two of Justyna's students in a ballroom hold" width="800" height="1000" loading="lazy">
+      <img src="photos/couple-3.webp" alt="A smiling couple practising a turn in class" width="800" height="1000" loading="lazy">
+    </div>
   </div>
 </section>
 
@@ -425,6 +435,7 @@
       <h2>Coming to your first class</h2>
       <p>Everyone starts somewhere. Here's what to expect, so you can walk in feeling relaxed.</p>
       <a class="btn btn-velvet" href="https://wa.me/447753612174?text=Hi%20Justyna%2C%20I%27d%20like%20to%20come%20to%20my%20first%20class.%20My%20name%20is%20" target="_blank" rel="noopener">Message me to book</a>
+      <img class="fc-photo" src="photos/class-group.webp" alt="Justyna with a group of her adult students in the dance hall" width="1200" height="753" loading="lazy">
     </div>
     <ol class="fc-list">
       <li><div><b>Message me first.</b> A quick WhatsApp or call so I know to expect you. Let me know if you've danced before.</div></li>
