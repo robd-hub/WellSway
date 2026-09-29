@@ -44,7 +44,7 @@ The preview pages differ slightly from this repo because the preview host can't 
 ## 3. Open items (priority order)
 
 ### Needed from Justyna / Rob
-- [ ] **Photos**: class/action shots (with permission), a junior competition photo, the hall. Biggest remaining improvement. Suggested spots: timetable (small thumbnails or a photo band above it), Salsa Fit section, parents section, About timeline, and opening up the "Ten dances" section.
+- [x] **Class photos added** (29 Sep 2026): three couples under the timetable and a group shot in "Coming to your first class". Still wanted: Salsa Fit and kids photos (with permission), a junior competition photo, and a better hero photo of Justyna. **Check Justyna has confirmed the students in the photos are happy to be on the site.**
 - [ ] **Domain**: e.g. `wellswaydance.co.uk` (Rob sorting).
 - [ ] **Kids' class price** (currently "Ask") and **end time** (currently "9:00am" only). Update the row's `data-end` too.
 - [ ] **Confirm the Facebook URL**: currently `profile.php?id=100071256626333`. If she has a vanity URL (facebook.com/…), swap it everywhere, including the `m.me/` Messenger links and JSON-LD `sameAs`.
