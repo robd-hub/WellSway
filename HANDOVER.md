@@ -46,7 +46,9 @@ The preview pages differ slightly from this repo because the preview host can't 
 ### Needed from Justyna / Rob
 - [x] **Class photos added** (29 Sep 2026): three couples under the timetable and a group shot in "Coming to your first class". Still wanted: Salsa Fit and kids photos (with permission), a junior competition photo, and a better hero photo of Justyna. **Check Justyna has confirmed the students in the photos are happy to be on the site.**
 - [ ] **Domain**: e.g. `wellswaydance.co.uk` (Rob sorting).
-- [ ] **Kids' class price** (currently "Ask") and **end time** (currently "9:00am" only). Update the row's `data-end` too.
+- [x] **Kids' class price**: £7 per child (Justyna, 28 Sep 2026). She needs at least 5 children to keep it running; not shown on the site.
+- [ ] **Kids' class end time** (currently "9:00am" only). Update the row's `data-end` too.
+- [ ] **Private classes**: added as "available, message for times and prices". Get prices and details from Justyna if she wants them shown.
 - [ ] **Confirm the Facebook URL**: currently `profile.php?id=100071256626333`. If she has a vanity URL (facebook.com/…), swap it everywhere, including the `m.me/` Messenger links and JSON-LD `sameAs`.
 - [ ] **Energy meter ratings** (1–5 per dance) are Claude's judgement. Ask Justyna to check.
 - [ ] Ask Justyna to **rename her Google Business Profile** from "Ballroom and Latin Dance Academy" to "WellSway Dance Studio" and add the website URL. Consistent name, address and phone helps local SEO.
