@@ -154,7 +154,13 @@
   .stars{display:flex;gap:3px;color:var(--gold-2)}.stars svg{width:18px;height:18px}
   .rv blockquote{font-size:1.08rem;line-height:1.6;flex:1}
   .rv figcaption b{display:block;color:var(--gold-2)}.rv figcaption span{font-size:.9rem;color:#b9d3ca}
-  .rv-more{margin-top:2rem;text-align:center}
+  .rv-quotes{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem 3rem;margin-top:3rem;padding-top:2.6rem;border-top:1px solid rgba(240,207,124,.2)}
+  .rv-quote{display:flex;flex-direction:column}
+  .rv-quote blockquote{font-family:var(--display);font-weight:500;font-size:1.12rem;line-height:1.6;color:#fff;flex:1}
+  .rv-quote blockquote::before{content:"“";display:block;font-size:3.2rem;line-height:.6;color:var(--gold-2);margin-bottom:.4rem}
+  .rv-quote figcaption{margin-top:1rem}
+  .rv-quote figcaption b{display:block;color:var(--gold-2)}.rv-quote figcaption span{font-size:.9rem;color:#b9d3ca}
+  .rv-more{margin-top:2.6rem;text-align:center}
 
   /* FAQ */
   .faq{max-width:800px;margin-inline:auto;display:grid;gap:.7rem}
@@ -336,7 +342,8 @@
   }
   @media (max-width:720px){
     section{padding-block:68px}
-    .styles,.rv-grid,.row2{grid-template-columns:1fr}
+    .styles,.rv-grid,.rv-quotes,.row2{grid-template-columns:1fr}
+    .rv-quotes{gap:2.2rem}
     .hero-grid{padding-block:40px 70px}
     .stage{width:min(250px,72%)}
     .chip-next{left:-24px;bottom:24px}
@@ -574,6 +581,10 @@
       <figure class="rv"><div class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-1z"/></svg></div>
         <blockquote>A lovely lady and a great teacher. The only person who has ever managed to explain to us how to dance a foxtrot. Wonderful choreography and great fun to be with.</blockquote>
         <figcaption><b>Chris Hood</b><span>Google review · Local Guide</span></figcaption></figure>
+    </div>
+    <div class="rv-quotes">
+      <figure class="rv-quote"><blockquote>It’s amazing to look back and see how far I’ve come in just a couple of years. I started with a basic experience of ballroom and Latin dancing, and now I can dance socially with confidence and genuinely enjoy myself on the dance floor. It’s great to see how much I’ve learned and how far I’ve progressed.</blockquote><figcaption><b>David Cross</b><span>WellSway student</span></figcaption></figure>
+      <figure class="rv-quote"><blockquote>I started lessons with Justyna just six months ago, and I’m delighted with how much I’ve learned in such a short time. She has been incredibly kind, patient and supportive, especially when I’ve struggled to get the moves right at first. Thanks to her encouragement, my confidence has grown considerably, and I can now dance the waltz with confidence at social events. I’m thrilled with the progress I’ve made in ballroom and Latin, and really appreciate all her help and support. 💃</blockquote><figcaption><b>Elizabeth Alexander</b><span>WellSway student</span></figcaption></figure>
     </div>
     <div class="rv-more"><a class="btn btn-ghost" href="https://maps.google.com/?cid=13043871493941128167" target="_blank" rel="noopener">Read all reviews on Google ↗</a><p style="margin-top:1.2rem"><a class="fb-link" href="https://www.facebook.com/profile.php?id=100071256626333" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>See class news and photos on Facebook</a></p></div>
   </div>

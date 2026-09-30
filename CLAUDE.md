@@ -46,7 +46,7 @@ HANDOVER.md    history, decisions, open items, launch checklist
 | 7 | Parents / kids | `#kids`, `.trust` | DBS, IDTA, first aid, insured |
 | 8 | Ten dances | `#dances` | Latin + Ballroom panels, each dance has a 1–5 "energy meter" (`.meter`) |
 | 9 | About | `#about` | "My dance *journey*" (script), her story in first person, pull quote, timeline |
-| 10 | Reviews | `#reviews` | Two real Google reviews (verbatim), links to Google listing and Facebook |
+| 10 | Reviews | `#reviews` | Two real Google reviews (cards with stars), then student testimonials (`.rv-quote`, no stars, labelled "WellSway student"); all verbatim. Links to Google listing and Facebook |
 | 11 | FAQ | `#faq` | `<details>`; first one open on purpose |
 | 12 | Contact | `#contact` | Cards (each whole card is a link, `a.way`): call, email, WhatsApp, Facebook page, Messenger, address; enquiry form with the map iframe under it |
 | 13 | Footer | `footer` | Logo, social icons, contact line, DesignImp credit |
@@ -99,7 +99,7 @@ Breakpoints: `980px` (stack two-column layouts), `720px` (phone: tab bar, single
 - Main sections speak **in Justyna's first person** ("I teach…", "Message me…"). Buttons and labels can address the visitor ("Send to Justyna").
 - Short, warm, plain sentences. Avoid marketing clichés and em-dash asides.
 - Her story in `#about` is **her own words**, lightly edited. Don't rewrite it; only fix typos.
-- Reviews are **verbatim real Google reviews**. Never invent, edit or add testimonials.
+- Reviews and testimonials are **verbatim**. Google reviews keep stars and the "Google review" label; testimonials supplied by Rob (David Cross, Elizabeth Alexander) are labelled "WellSway student" with no stars. Never invent or edit them, and only add ones Rob supplies.
 - Don't add claims (awards, qualifications, prices, times) that aren't in the facts below or confirmed by Rob.
 
 ## Source-of-truth business facts
