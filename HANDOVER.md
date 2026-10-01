@@ -65,7 +65,7 @@ The preview pages differ slightly from this repo because the preview host can't 
 ### Code tidy-up (safe to do any time)
 - [x] **Removed unused CSS** left from earlier iterations (72 rules; checked against the HTML and JS, layout unchanged at 390px and 1280px).
 - [x] Compressed the share image: now `og-image.jpg` (145 KB, was a 577 KB PNG). Meta tags updated.
-- [ ] Convert `justyna.jpg` to WebP with a JPG fallback (`<picture>`) when new photos arrive.
+- [x] New hero photo (Justyna outside, Oct 2026) as `photos/justyna-hero.webp`; old Christmas-tree `justyna.jpg` removed. `og-image.jpg` still uses the old photo and should be regenerated.
 
 ### Nice to have (discussed, not yet requested)
 - [ ] A **first-class offer** ("First class free" or "£5 taster"), shown in the hero and timetable. The single most effective conversion idea.

@@ -15,7 +15,7 @@ A one-page marketing website for **WellSway Dance Studio**, run by dance teacher
 
 - **Plain static site.** One `index.html` with all CSS and JS inline. No framework, no build step, no package.json.
 - Fonts from Google Fonts: Bricolage Grotesque (headings), Plus Jakarta Sans (body), Great Vibes (script accents and logo).
-- Images: `justyna.jpg` (her photo, 640×800), `og-image.jpg` (1200×630 social share image), `photos/*.webp` (class photos: 3 couples under the timetable, group shot in `#first-class`).
+- Images: `photos/justyna-hero.webp` (hero photo, 800×1000), `og-image.jpg` (1200×630 social share image), `photos/*.webp` (class photos: 3 couples under the timetable, group shot in `#first-class`).
 - `vercel.json`: clean URLs and image cache headers.
 
 Keep it this way unless Rob asks otherwise. Don't introduce React, Tailwind, a bundler or npm dependencies for a one-page site.
@@ -24,7 +24,6 @@ Keep it this way unless Rob asks otherwise. Don't introduce React, Tailwind, a b
 
 ```
 index.html     the whole site (HTML + <style> + <script>)
-justyna.jpg    hero photo of Justyna
 og-image.jpg   Facebook/WhatsApp link preview image (green & gold)
 photos/        class photos (WebP, cropped and colour-corrected); originals stay local in "Class Photos/" (gitignored)
 vercel.json    Vercel static config
