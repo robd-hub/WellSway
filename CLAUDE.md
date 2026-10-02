@@ -126,6 +126,8 @@ Breakpoints: `980px` (stack two-column layouts), `720px` (phone: tab bar, single
 | Thursday | 19:00–20:00 | Intermediate / Improvers | £10 |
 | Saturday | 09:00–10:00 | Junior Ballroom & Latin, ages 5+ | £7 per child |
 
+**Payment**: cash only for now (first-class step 4, FAQ cost answer, JSON-LD `paymentAccepted`). Remove all three if she starts taking cards or transfers.
+
 **Private classes**: available; times and prices on request (shown in `#classes` under the timetable, the FAQ, the form and JSON-LD). Justyna needs at least 5 children for the kids' class to keep running; this is not shown on the site.
 
 **Dances**: Latin: Cha-cha, Samba, Rumba, Paso Doble, Jive. Ballroom: Waltz, Tango, Viennese Waltz, Foxtrot, Quickstep.
