@@ -122,7 +122,7 @@ Breakpoints: `980px` (stack two-column layouts), `720px` (phone: tab bar, single
 | Day | Time | Class | Price |
 |---|---|---|---|
 | Monday | 19:15–20:15 | Salsa Fit for Ladies | £10 |
-| Tuesday | 19:00–20:00 | Beginners (Ballroom & Latin) | £10 |
+| Tuesday | 20:00–21:00 (extra classes can be available 19:00–20:00) | Beginners (Ballroom & Latin) | £10 |
 | Thursday | 19:00–20:00 | Intermediate / Improvers | £10 |
 | Saturday | 09:00–10:00 | Junior Ballroom & Latin, ages 5+ | £7 per child |
 
