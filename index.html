@@ -7,7 +7,8 @@
 <!--SEO-->
 <meta name="description" content="Friendly Ballroom, Latin and Salsa Fit classes with Justyna Wells at Washingborough Community Centre, Lincoln. Beginners, improvers, ladies' Salsa Fit and junior classes every week.">
 <meta name="theme-color" content="#0c3b35">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230c3b35'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-style='italic' font-size='40' text-anchor='middle' fill='%23e3b556'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="WellSway Dance Studio">
 <meta property="og:title" content="WellSway Dance Studio · Ballroom, Latin &amp; Salsa Fit in Washingborough">
@@ -53,11 +54,14 @@
   /* NAV */
   .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(12,59,53,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(240,207,124,.18)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:1rem}
-  .logo{display:flex;flex-direction:column;text-decoration:none;color:#fff;line-height:.9}
+  .logo{display:flex;align-items:center;gap:.55rem;text-decoration:none;color:#fff}
+  .logo .mark{width:44px;height:44px;flex:none;fill:var(--gold-2);color:var(--gold-2)}
+  .logo-text{display:flex;flex-direction:column;line-height:.9}
   .logo .script{font-size:2rem;color:var(--gold-2)}
   .logo small{font-size:.56rem;letter-spacing:.34em;opacity:.8;margin-top:3px}
   .nav ul{display:flex;align-items:center;gap:.3rem;list-style:none}
-  .nav ul a{display:block;color:#e8f2ee;text-decoration:none;font-size:.9rem;font-weight:600;padding:.5rem .8rem;border-radius:999px}
+  .nav ul a{display:block;color:#e8f2ee;text-decoration:none;font-size:.9rem;font-weight:600;padding:.5rem .8rem;border-radius:999px;white-space:nowrap}
+  @media (max-width:1140px){.nav ul a{padding:.5rem .5rem;font-size:.86rem}.nav ul a.btn{padding:.6rem .9rem;margin-left:.2rem}.logo .mark{width:38px;height:38px}}
   .nav ul a:hover,.nav ul a.on{background:rgba(255,255,255,.1);color:var(--gold-2)}
   .nav ul a.btn{padding:.65rem 1.1rem;margin-left:.4rem;color:#2a1d05;background:linear-gradient(135deg,var(--gold-2),var(--gold))}
   .nav ul a.btn:hover{color:#2a1d05;filter:brightness(1.05)}
@@ -359,10 +363,12 @@
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="couple" viewBox="0 0 64 64"><circle cx="22.5" cy="9" r="4.3"/><path d="M17.5 16 Q22 14.3 27 15.5 L27.6 20 Q27.2 28 26.6 34 L28.8 59.5 Q27 61 25 59.5 L22.6 40.5 L14.6 59.5 Q12.6 60.5 11.6 58.5 L19.8 34 Q18.4 25 17.5 16 Z"/><path fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" d="M18.3 17.5 Q13 11.5 7.5 6.5"/><circle cx="42.6" cy="15.4" r="3.9"/><path fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" d="M39.2 19.8 L41.2 17.6"/><path d="M33 18.5 Q38 17.5 42 20.5 Q38.5 26 37 32 Q46 40 60.5 51 Q54 58 44 60 Q36 61 30 60 Q32 46 32.5 33 Q32 25 33 18.5 Z"/><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" d="M34 20.5 L27.3 17.5"/></symbol></svg>
+
 
 <header class="top" id="top">
   <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="WellSway Dance Studio home"><span class="script">WellSway</span><small>DANCE STUDIO</small></a>
+    <a class="logo" href="#top" aria-label="WellSway Dance Studio home"><svg class="mark" aria-hidden="true"><use href="#couple"/></svg><span class="logo-text"><span class="script">WellSway</span><small>DANCE STUDIO</small></span></a>
     <ul id="menu">
       <li><a href="#classes">Classes</a></li>
       <li><a href="#salsa-fit">Salsa Fit</a></li>
@@ -650,7 +656,7 @@
 <footer>
   <div class="wrap">
     <div class="foot">
-      <div><a class="logo" href="#top"><span class="script">WellSway</span><small>DANCE STUDIO</small></a><div class="social"><a href="https://www.facebook.com/profile.php?id=100071256626333" target="_blank" rel="noopener" aria-label="WellSway on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg></a><a href="https://m.me/100071256626333" target="_blank" rel="noopener" aria-label="Message WellSway on Messenger"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.7c0 2.9 1.2 5.5 3.2 7.2V22l3-1.6c1.2.3 2.5.5 3.8.5 5.6 0 10-4.1 10-9.7S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7z"/></svg></a><a href="https://wa.me/447753612174?text=Hi%20Justyna%2C%20I%20found%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20dance%20classes." target="_blank" rel="noopener" aria-label="WhatsApp Justyna"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a></div></div>
+      <div><a class="logo" href="#top"><svg class="mark" aria-hidden="true"><use href="#couple"/></svg><span class="logo-text"><span class="script">WellSway</span><small>DANCE STUDIO</small></span></a><div class="social"><a href="https://www.facebook.com/profile.php?id=100071256626333" target="_blank" rel="noopener" aria-label="WellSway on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg></a><a href="https://m.me/100071256626333" target="_blank" rel="noopener" aria-label="Message WellSway on Messenger"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.7c0 2.9 1.2 5.5 3.2 7.2V22l3-1.6c1.2.3 2.5.5 3.8.5 5.6 0 10-4.1 10-9.7S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7z"/></svg></a><a href="https://wa.me/447753612174?text=Hi%20Justyna%2C%20I%20found%20your%20website%20and%20would%20like%20to%20know%20more%20about%20your%20dance%20classes." target="_blank" rel="noopener" aria-label="WhatsApp Justyna"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a></div></div>
       <div>Ballroom, Latin &amp; Salsa Fit · Washingborough, Lincoln<br><a href="tel:+447753612174">07753 612174</a> · <a href="mailto:justynawells13@gmail.com">justynawells13@gmail.com</a></div>
     </div>
     <div class="credit">© WellSway Dance Studio · Website by <a href="https://www.designimp.com" target="_blank" rel="noopener">DesignImp</a></div>

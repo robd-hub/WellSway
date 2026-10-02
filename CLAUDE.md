@@ -25,6 +25,9 @@ Keep it this way unless Rob asks otherwise. Don't introduce React, Tailwind, a b
 ```
 index.html     the whole site (HTML + <style> + <script>)
 og-image.jpg   Facebook/WhatsApp link preview image (green & gold)
+favicon.svg    browser tab icon: gold dancing couple on emerald
+apple-touch-icon.png  180×180 home-screen icon (iPhone)
+couple-icon.svg       the dancing couple mark on its own (gold, transparent); also inlined as <symbol id="couple"> and used in the header/footer logo
 photos/        class photos (WebP, cropped and colour-corrected); originals stay local in "Class Photos/" (gitignored)
 vercel.json    Vercel static config
 .vercelignore  keeps CLAUDE.md and HANDOVER.md off the live site
